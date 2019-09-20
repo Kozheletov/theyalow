@@ -1,50 +1,36 @@
 @font-face {
-	font-weight: normal;
-	font-family: "Segoe WP", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/SegoeWP.woff") format("woff");
+	font-family: 'Segoe WP';
+	src: url('assets/fonts/SegoeWP.woff') format('woff');
 }
 
 @font-face {
-	font-weight: 300;
-	font-family: "Segoe wp light", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/segoe-wp-light.ttf") format("truetype");
+	font-family: "Segoe wp light";
+	src: url("assets/fonts/segoe-wp-light.ttf") format("truetype");
 }
 
 @font-face {
-	font-weight: normal;
-	font-family: "Asap", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/Asap-Regular.ttf") format("truetype");
+	font-family: "Asap";
+	src: url("assets/fonts/Asap-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-weight: normal;
-	font-family: "Lusinda", sans-serif;
-	font-style: italic;
-	src: url("./assets/fonts/Lucida Sans Italic.ttf") format("truetype");
+	font-family: "Lusinda";
+	src: url("assets/fonts/Lucida Sans Italic.ttf") format("truetype");
 }
 
 @font-face {
-	font-weight: normal;
-	font-family: "PTsans", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/PTSans-Regular.ttf") format("truetype");
+	font-family: "PTsans";
+	src: url("assets/fonts/PTSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-weight: bold;
-	font-family: "PTsansNarrow", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/PTSansNarrow-Bold.ttf") format("truetype");
+	font-family: "PTsansNarrow";
+	src: url("assets/fonts/PTSansNarrow-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-weight: normal;
-	font-family: "OpenSans", sans-serif;
-	font-style: normal;
-	src: url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
+	font-family: "OpenSans";
+	src: url("assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 :root {
@@ -58,7 +44,7 @@
 }
 
 body {
-	font-family: "OpenSans";
+	font-family: 'Segoe WP', Helvetica, sans-serif;
 }
 
 img {
@@ -112,6 +98,7 @@ button {
 	font-family: "Lusinda", sans-serif;
 	font-style: italic;
 	font-size: 19.29px;
+	letter-spacing: 0.3px;
 	padding-top: 2px;
 	padding-left: 58px;
 	line-height: 62px;
@@ -148,8 +135,7 @@ button {
 	text-decoration: none;
 	line-height: 60px;
 	font-size: 18px;
-	font-family: "Segoe WP", sans-serif;
-	font-weight: 300;
+	font-family: "Segoe WP";
 	text-transform: uppercase;
 	color: #9b7d08;
 
@@ -159,19 +145,20 @@ button {
 	width: 172px;
 	border-right: 1px solid #b99403;
 	padding-left: 58px;
+	letter-spacing: 1px;
 }
-
 
 .second-link {
 	width: 133px;
 	border-right: 1px solid #b99403;
 	padding-left: 35px;
-	letter-spacing: -0.9px;
+	letter-spacing: 1.3px;
 }
 
 .third-link {
 	width: 149px;
 	padding-left: 52px;
+	letter-spacing: 0.8px;
 }
 
 
@@ -276,8 +263,7 @@ button {
 	.firts-link {
 		width: 173px;
 		padding-left: 68px;
-		letter-spacing: -0.5px;
-		;
+		letter-spacing: 0.3px;
 	}
 
 	.firts-link::before {
@@ -292,8 +278,7 @@ button {
 
 	.second-link {
 		padding-left: 40px;
-		letter-spacing: -1.5px;
-		;
+		letter-spacing: 0.5px;
 	}
 
 	.second-link::before {
@@ -309,7 +294,7 @@ button {
 	.third-link {
 		width: 147px;
 		padding-left: 48px;
-		letter-spacing: -0.5px;
+		letter-spacing: 0.5px;
 	}
 
 	.third-link::before {
@@ -483,22 +468,21 @@ button {
 	.video__slogan p {
 		font-family: "Asap", sans-serif;
 		font-size: 63px;
-		letter-spacing: 10;
 		text-transform: uppercase;
 	}
 
 	.video__slogan-first {
 		color: #f5c506;
-		padding-left: 87px;
-		margin-top: 79px;
+		padding-left: 90px;
+		margin-top: 77px;
 		margin-bottom: 0;
-		letter-spacing: -2.9px;
+		letter-spacing: 0.7px;
 	}
 
 	.video__slogan-second {
-		margin-top: 3px;
-    margin-left: 47px;
-    letter-spacing: -2px;
+		margin-top: 4px;
+    margin-left: 48px;
+    letter-spacing: 0.7px;
     color: #fff;
 	}
 
@@ -546,5 +530,164 @@ button {
 		top: 18px;
 		right: 8px;
 	}
+}
 
+
+.description {
+	position: relative;
+	height: 170px;
+	z-index: 1000;
+}
+
+.description .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.description-box {
+	flex-basis: 33.33%;
+	text-align: center;
+}
+
+.description::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -8px;
+	background-image: url("./assets/image/description-bg.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.description::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -4px;
+	background-image: url("./assets/image/description-bg.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.description-box {
+	position: relative;
+	z-index: 10;
+	height: 114px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.description-box h3 {
+	font-family: "Segoe wp light";
+	margin-bottom: 0;
+	margin-top: auto;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 23px;
+}
+
+.description-box-first  svg {
+	margin-left: -34px;
+	margin-top: 5px;
+	width: 89px;
+	height: 61px;
+}
+
+.description-box-first  h3 {
+	margin-bottom: 2px;
+	letter-spacing: 0.3px;
+	margin-left: -23px;
+}
+
+.description-box-two svg {
+	margin-left: 17px;
+	width: 67px;
+	height: 69px;
+}
+
+.description-box-two  h3 {
+	letter-spacing: 0.2px;
+	margin-left: 18px;
+	margin-bottom: 2px;
+}
+
+.description-box-third svg {
+	margin-left: -4px;
+	width: 68px;
+	height: 69px;
+}
+
+.description-box-third  h3 {
+	letter-spacing: 0.5px;
+	margin-bottom: 2px;
+	margin-left: 8px;
+}
+
+@media (min-width: 1300px) {
+	.description::after {
+		display: none;
+	}
+
+	.description {
+		height: 212px;
+	}
+
+	.description::before {
+		background-image: url("./assets/image/description-bg-desk.png");
+		top: 0;
+	}
+
+	.description-box {
+		height: 212px;
+		border-right: 1px solid #cfcfcf;
+	}
+
+	.description-box h3 {
+		font-size: 27px;
+	}
+
+	.description-box-first {
+		border-left: 1px solid #cfcfcf;
+	}
+
+	.description-box-first svg {
+		width: 110px;
+		height: 74px;
+		margin-left: -3px;
+		margin-top: 61px;
+	}
+
+	.description-box-first h3 {
+		margin-left: 18px;
+		margin-bottom: 33px;
+	}
+
+	.description-box-two svg {
+		width: 94px;
+		height: 96px;
+		margin-left: 26px;
+    margin-top: 37px;
+	}
+
+	.description-box-two h3 {
+    margin-left: 19px;
+		margin-bottom: 33px;
+		letter-spacing: 0.3px;
+	}
+
+	.description-box-third svg {
+		width: 82px;
+		height: 84px;
+		margin-top: 53px;
+		margin-left: -18px;
+	}
+
+	.description-box-third h3 {
+    margin-left: -15px;
+		margin-bottom: 33px;
+	}
 }
