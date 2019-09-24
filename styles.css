@@ -48,7 +48,6 @@ body {
 }
 
 img {
-	width: 100%;
 	height: auto;
 }
 
@@ -1036,5 +1035,138 @@ button {
 		top: 59px;
 		left: 83px;
 		background-image: url("./assets/image/twitter-image-desk.svg");
+	}
+}
+
+
+/*                        section: all-screen                      */
+
+.all-screen {
+	background-color: #474747;
+}
+
+.all-screen__header {
+	margin-top: 0;
+	padding-top: 35px;
+	padding-left: 18px;
+	letter-spacing: 0.4px;
+	font-family: "OpenSans";
+	font-size: 39px;
+	text-transform: uppercase;
+	color: #f5c506;
+	font-weight: 400;
+}
+
+.all-screen__list {
+	display: none;
+}
+
+.all-screen__views {
+	position: relative;
+	list-style: none;
+	margin: 0 auto 0 58px;
+	padding: 45px 0 52px 0;
+	width: 539px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.all-screen__views::before {
+	content: "";
+	width: 117px;
+	height: 117px;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	left: -31px;
+	background-color: #f5c506;
+}
+
+.all-screen__views::after {
+	content: "its 100% free";
+	position: absolute;
+	top: 55px;
+	left: -23px;
+	font-family: "PTsansNarrow";
+	font-size: 18.74px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.all-screen__views li:nth-child(2) {
+	padding-top: 42px;
+}
+
+.all-screen__views li:last-child {
+	padding-top: 152px;
+}
+
+@media (min-width: 1300px) {
+	.all-screen {
+		background-image: url("./assets/image/scree-bg-desk.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.all-screen__header {
+		padding-left: 0;
+		padding-top: 40px;
+		text-align: center;
+		font-family: "PTsans";
+		font-size: 43px;
+		letter-spacing: 0.45px;
+	}
+
+	.all-screen__views {
+		padding-top: 11px;
+		margin-left: 18px;
+		padding-bottom: 103px;
+	}
+
+	.all-screen__views::before {
+		top: -31px;
+    left: -20px;
+	}
+
+	.all-screen__views::after {
+		top: 20px;
+    left: -12px;
+	}
+
+	.all-screen__wrapper {
+		display: flex;
+	}
+
+	.all-screen__list {
+		display: block;
+		width: 383px;
+		padding-left: 34px;
+    margin-top: 57px;
+		list-style-type: none;
+		font-family: "OpenSans";
+		font-size: 22px;
+		color: #a9a9a7;
+		letter-spacing: 0.1px;
+	}
+
+	.all-screen__list li:nth-child(2n) {
+		margin-top: 25px;
+		margin-bottom: 16px;
+	}
+
+	.all-screen__list li {
+		position: relative;
+	}
+
+	.all-screen__list li::before {
+		content: "";
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: -33px;
+		top: 7px;
+		background-image: url("./assets/image/screen_list_disc.svg");
+		background-repeat: no-repeat;
+		background-position: 0 0;
 	}
 }
