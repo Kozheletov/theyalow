@@ -69,6 +69,7 @@ button {
 .wrapper {
 	width: 640px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .header__page {
@@ -1064,9 +1065,9 @@ button {
 .all-screen__views {
 	position: relative;
 	list-style: none;
-	margin: 0 auto 0 58px;
+	margin: 0 auto 0 57px;
 	padding: 45px 0 52px 0;
-	width: 539px;
+	width: 540px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1099,6 +1100,7 @@ button {
 
 .all-screen__views li:last-child {
 	padding-top: 152px;
+	padding-left: 1px;
 }
 
 @media (min-width: 1300px) {
@@ -1125,12 +1127,12 @@ button {
 
 	.all-screen__views::before {
 		top: -31px;
-    left: -20px;
+		left: -20px;
 	}
 
 	.all-screen__views::after {
 		top: 20px;
-    left: -12px;
+		left: -12px;
 	}
 
 	.all-screen__wrapper {
@@ -1141,7 +1143,7 @@ button {
 		display: block;
 		width: 383px;
 		padding-left: 34px;
-    margin-top: 57px;
+		margin-top: 57px;
 		list-style-type: none;
 		font-family: "OpenSans";
 		font-size: 22px;
@@ -1169,4 +1171,76 @@ button {
 		background-repeat: no-repeat;
 		background-position: 0 0;
 	}
+}
+
+.footer {
+	background-color: #4c4c4c;
+	box-shadow: 0 -2px 2px #000;
+}
+
+.footer__slogan {
+	position: relative;
+	margin-top: 0;
+	padding-left: 105px;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	font-family: "Lusinda";
+	font-size: 16.68px;
+	text-transform: uppercase;
+	color: #fff;
+	font-style: italic;
+	text-shadow: 0 2px #000;
+}
+
+.footer__slogan::before {
+	content: "";
+	width: 31px;
+	height: 31px;
+	background-image: url("./assets/image/Internal_logo_footer_mob.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 7px;
+	left: 66px;
+}
+
+.footer__slogan::after {
+	content: "";
+	width: 31px;
+	height: 31px;
+	background-image: url("./assets/image/extarnal_logo_footer_mob.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 6px;
+	left: 65px;
+}
+
+@media (min-width: 1300px) {
+	.footer {
+		background-color: #4c4c4c;
+	}
+
+	.footer__slogan {
+		font-size: 29px;
+		padding-top: 17px;
+		padding-left: 60px;
+		padding-bottom: 14px;
+	}
+	.footer__slogan::before {
+		width: 51px;
+		height: 51px;
+		background-image: url("./assets/image/Internal_logo_footer_desk.svg");
+		top: 7px;
+		left: 1px;
+	}
+	
+	.footer__slogan::after {
+		width: 54px;
+		height: 54px;
+		background-image: url("./assets/image/extarnal_logo_footer_desk.svg");
+		top: 6px;
+		left: 0px;
+	}
+	
 }
